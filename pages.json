@@ -1,0 +1,100 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				// "navigationBarTitleText": "uni-app"
+				"app-plus":{
+					"titleNView":{
+						"searchInput":{
+							"backgroundColor":"#fff",
+							"borderRadius":"6px",
+							"placeholder":"请输入作者和书名",
+							"disabled":true,
+							"align":"left"
+						}
+					}
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/classify/classify",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/shelf/shelf",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "app-plus":{
+						"titleNView":{
+							"backgroundColor":"#fff",
+							"searchInput":{
+								"autoFocus":true,
+								"borderRadius":"6px",
+								"placeholder":"书名和作者",
+								"backgroundColor":"#f4f4f5"
+							}
+						}
+				},
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"selectedColor":"#C96616",
+		"list": [{
+			"text": "首页",
+			"iconPath": "static/tabbar/home.png",
+			"selectedIconPath": "static/tabbar/home1.png",
+			"pagePath": "pages/index/index"
+		}, {
+			"text": "分类",
+			"iconPath":"static/tabbar/classify.png",
+			"selectedIconPath":"static/tabbar/classify1.png",
+			"pagePath":"pages/classify/classify"
+		}, {
+			"text": "书架",
+			"iconPath":"static/tabbar/shelf.png",
+			"selectedIconPath":"static/tabbar/shelf1.png",
+			"pagePath":"pages/shelf/shelf"
+		}, {
+			"text": "我的",
+			"iconPath":"static/tabbar/my.png",
+			"selectedIconPath":"static/tabbar/my1.png",
+			"pagePath":"pages/my/my"
+		}]
+	}
+}
